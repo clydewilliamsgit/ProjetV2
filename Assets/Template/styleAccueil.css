@@ -1,17 +1,18 @@
 html {
   background-color: #ffffff;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
-
-h1 {
-  font-size: 80px;
-
-  padding: 20px 0;
-  color: #73b5f3;
-  text-shadow: 3px 3px 1px rgb(117, 117, 117);
+/* Positionner logo*/
+#logo
+{
+position: absolute;
+left:50px;
+top:50px;
+width: 10%;
 }
+
 /* Enlever soulignement des liens*/
 a{
   text-decoration: none;
@@ -23,12 +24,12 @@ a{
 }
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: center;
+  float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -42,7 +43,28 @@ a{
 }
 #container{
   display: flex;
-  flex-direction: column;;
+  flex-direction: inline;
+}
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 10px;
+  border: none;
+  margin-top: 15px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.topnav .search-container {
+  float: right;
+}
+
+/* Titres */
+h1 {
+  font-size: 80px;
+
+  padding: 20px 0;
+  color: #73b5f3;
+  text-shadow: 3px 3px 1px rgb(117, 117, 117);
 }
 
 /* Footer */

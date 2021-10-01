@@ -1,91 +1,104 @@
 <html>
+<head>
     <html lang="fr"></html>
     <meta charset="utf-8">
     <title>Page d'Accueil</title>
+                <!-- Icône -->
+    <link rel="shortcut icon" href="Assets/Images/favico.jpg" type="image/jpg">
+    
     <link rel="stylesheet" href="Assets/Template/styleAccueil.css">
-    <link href='https://fonts.google.com/specimen/Scheherazade+New#standard-styles' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <style></style>
-
+</head>
     <body>
 
         <nav>
+            <header>
+                <h1>YODOYA</h1>
+                <img src="Assets/Images/logoyodoya.jpg" alt="Logo Boutique yodoya" srcset="Logo Yodoya" id="logo"/>
+            </header>
 
-            <h1>YODOYA</h1>
-                <img src="Assets/Images/logoyodoya.png" alt="Logo Boutique yodoya" srcset="Logo Yodoya"/>
-
-            </div>
             <div class="topnav">
             <a class="active" href="index.html">Accueil </a>
             <a href="promos.html">PROMOS</a>
             <a href="hauts.html">HAUTS</a>
             <a href="bas.html">BAS</a>
             <a href="accessoires.html">ACCESSOIRES</a>
-            <input type="text" placeholder="Rechercher..">
+            <div class="search-container">
+            <input type="text" placeholder="Rechercher...">
+            </div>
             <a href="panier.html">PANIER</a>
-          </div> 
+            </div> 
 
-        
         </nav>
+
         <main>
-                        <section>
-                            <article>
-                                <h1>Bienvenue !</h1>
-                            </article>
-                        </section>
-
-                        <article>
-                            <!-- Gallerie --> 
+            <section>
+            <article>
+            <!-- Gallerie --> 
            
-                        <div class="slideshow-container">
-                        <!-- Full-width images with number and caption text -->
-                        <div class="mySlides fade">
-                          <div class="numbertext">1 / 2</div>
-                           <img src="Assets/Images/japon1.jpg" style="width:50%">
-                      <div class="text">Le Japon c'est Cool</div>
-                            </div>
-                        <div class="mySlides fade">
-                         <div class="numbertext">2 / 2 </div>
-                         <img src="Assets/Images/japon4.jpg" style="width:50%">
-                         <div class="text">Allez-y ! </div>
+             <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 2</div>
+              <img src="Assets/Images/japon1.jpg" style="width:50%">
+             <div class="text">Le Japon c'est Cool</div>
+            </div>
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 2 </div>
+            <img src="Assets/Images/japon4.jpg" style="width:50%">
+            <div class="text">Allez-y ! </div>
                                                                                                                                     
-                       <!-- Next and previous buttons -->
-                       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                         </div>
-                         <br>
-                         <!-- The dots/circles -->
-                           <div style="text-align:center">
-                      <span class="dot" onclick="currentSlide(1)"></span>
-                      <span class="dot" onclick="currentSlide(2)"></span>
-                      </div>   
-                     <script>
-                     var slideIndex = 0;
-            showSlides();
+             <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            </div>   
+             <script>
+                 var slideIndex = 0;
+                 showSlides();
                                                                                                                                    
-            function showSlides() {
-            var i;
-           var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) 
-            {
-           slides[i].style.display = "none";  
-            }
-            slideIndex++;
-             if (slideIndex > slides.length) {slideIndex = 1}    
-           for (i = 0; i < dots.length; i++) {
-           dots[i].className = dots[i].className.replace(" active", "");
-           }
-           slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-           setTimeout(showSlides, 4000); // Change image every 4 seconds
-           }
-           </script>      
-           
-                            <!-- Gallerie FIN --> 
-           
+                function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) 
+                {
+                slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                 }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 4000); // Change image every 4 seconds
+                 }
+           </script>     
+           </section> 
+              <!-- Gallerie FIN --> 
+            <section>
+            <article>
+                <h1>Bienvenue !</h1>
+            </article>
+            </section>
 
-                        </article>
-                </section>
+
+
+
+
+
+
+
+
+
+             <!-- Contact -->        
                 <section>
                         <div  img src="Assets/Images/news1.jpg" alt="Logo Boutique yodoya" srcset=""/> </div>
                 </section>
