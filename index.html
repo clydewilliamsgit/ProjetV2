@@ -1,141 +1,149 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <html lang="fr"></html>
-    <meta charset="utf-8">
-    <title>Page d'Accueil</title>
-                <!-- Icône -->
-    <link rel="shortcut icon" href="Assets/Images/favico.jpg" type="image/jpg">
-
-    <link rel="stylesheet" href="Assets/Template/styleAccueil.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <style></style>
-</head>
-    <body>
-
-        <nav>
-            <header>
-                <h1>YODOYA</h1>
-                <img src="Assets/Images/logoyodoya.jpg" alt="Logo Boutique yodoya" srcset="Logo Yodoya" id="logo"/>
-            </header>
-
-            <div class="topnav">
-            <a class="active" href="index.html">Accueil </a>
-            <a href="promos.html">PROMOS</a>
-            <a href="hauts.html">HAUTS</a>
-            <a href="bas.html">BAS</a>
-            <a href="accessoires.html">ACCESSOIRES</a>
-            <div class="search-container">
-            <input type="text" placeholder="Rechercher...">
-            </div>
-            <a href="panier.html">PANIER</a>
-            </div> 
-
-        </nav>
-
-        <main>
-            <section>
-            <article>
-            <!-- Gallerie --> 
-           
-             <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 2</div>
-              <img src="Assets/Images/japon1.jpg" style="width:50%">
-             <div class="text">Le Japon c'est Cool</div>
-            </div>
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 2 </div>
-            <img src="Assets/Images/japon4.jpg" style="width:50%">
-            <div class="text">Allez-y ! </div>
-                                                                                                                                    
-             <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            </div>   
-             <script>
-                 var slideIndex = 0;
-                 showSlides();
-                                                                                                                                   
-                function showSlides() {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                for (i = 0; i < slides.length; i++) 
-                {
-                slides[i].style.display = "none";  
-                }
-                slideIndex++;
-                if (slideIndex > slides.length) {slideIndex = 1}    
-                for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-                 }
-                slides[slideIndex-1].style.display = "block";  
-                dots[slideIndex-1].className += " active";
-                setTimeout(showSlides, 4000); // Change image every 4 seconds
-                 }
-           </script>     
-           </section> 
-              <!-- Gallerie FIN --> 
-
-            <section>
-            <article>
-                <h1>Bienvenue !</h1>
+	<head>
+		<lang="fr">
+			<meta charset="utf-8">
+			<title>Page d'Accueil</title>
+			<!-- Icône -->
+			<link rel="shortcut icon" href="Assets/Images/favico.jpg" type="image/jpg">
+			<link rel="stylesheet" href="Assets/Template/styleAccueil.css">
+			<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	</head>
+		<body>
+			<nav>
+				<h1>YODOYA</h1>
+				<img src="Assets/Images/logoyodoya.jpg" alt="Logo Boutique yodoya" srcset="Logo Yodoya" id="logo"/>
+				<div class="topnav">
+					<a class="active" href="index.html">Accueil </a>
+					<a href="promos.html">PROMOS</a>
+					<a href="hauts.html">HAUTS</a>
+					<a href="bas.html">BAS</a>
+					<a href="accessoires.html">ACCESSOIRES</a>
+					<div class="search-container">
+						<input type="text" placeholder="Rechercher...">
+					</div>
+					<a href="panier.html">PANIER</a>
+				</div>
+			</nav>
+			<main>
+				<section>
+					<article>
+						<!-- Gallerie -->
+						<div class="slideshow-container">
+							<!-- Full-width images with number and caption text -->
+							<div class="mySlides fade">
+								<div class="numbertext">
+									1 / 2
+								</div>
+								<img src="Assets/Images/japon1.jpg" style="width:50%">
+								<div class="text">
+									Le Japon c'est Cool
+								</div>
+							</div>
+							<div class="mySlides fade">
+								<div class="numbertext">
+									2 / 2 
+								</div>
+								<img src="Assets/Images/japon4.jpg" style="width:50%">
+								<div class="text">
+									Allez-y ! 
+								</div>
+								<!-- Next and previous buttons -->
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							<!-- The dots/circles -->
+							<div style="text-align:center">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+							</div>
             </article>
-            <article>
-                <h2>L'automne est arrivé, nos nouveaux modèles aussi!</h2>
-                <img src="Assets/Images/kimono2.webp" alt="kimono1" class="center"> 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident laborum porro repellendus quis obcaecati, error debitis alias consequatur? Dolorum saepe dicta error ratione sit deserunt, dolor maiores veritatis modi.</p>
-            </article>
-            <article>
-                <h2>Paris Fashion Week 2021 : Osez défiler en kimono!</h2>
-                <img src="Assets/Images/kimono.png" alt="kimono2" class="center"> 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo nulla placeat aliquam nesciunt. Ad numquam aliquid maiores minima placeat qui, rerum quae, velit dolores maxime, vitae repellendus magni at.</p>
-            </article>
-            </section>
+							<script>
+								                 var slideIndex = 0;
+								                 showSlides();
+								                 function showSlides() {
+									                var i;
+									                var slides = document.getElementsByClassName("mySlides");
+									                var dots = document.getElementsByClassName("dot");
+									                for (i = 0;
+									 i < slides.length;
+									 i++)                 {
+										                slides[i].style.display = "none";
+										                  
+									}
+									                slideIndex++;
+									                if (slideIndex > slides.length) {
+										slideIndex = 1
+									}
+									                    for (i = 0;
+									 i < dots.length;
+									 i++) {
+										                dots[i].className = dots[i].className.replace(" active", "");
+										                 
+									}
+									                slides[slideIndex-1].style.display = "block";
+									                  dots[slideIndex-1].className += " active";
+									                setTimeout(showSlides, 4000);
+									 // Change image every 4 seconds                 
+								}
+							</script>
 
-             <!-- Contact -->        
-                <section>
-                        <div  img src="Assets/Images/news1.jpg" alt="Logo Boutique yodoya" srcset=""/> </div>
-                </section>
-
-                <div class="container">
-                    <div style="text-align:center">
-                      <h2>Contactez-nous</h2>
-                      <p>Dites-nous ce que vous voulez, on veut tout savoir ! </p>
-                    </div>
-                    <div class="row">
-                      <div class="column">
-                        <img src="Assets/Images/contact.jpg" style="width:100%">
-                      </div>
-                      <div class="column">
-                        <form action="/action_page.php">
-                          <label for="fname">Prénom</label>
-                          <input type="text" id="fname" name="prénom" placeholder="Votre prénom..">
-                          <label for="lname">Nom </label>
-                          <input type="text" id="lname" name="nfamille" placeholder="Votre nom de famille..">
-                          <label for="pays">Pays</label>
-                          <select id="pays" name="pays">
-                            <option value="australie">Australie</option>
-                            <option value="france">France</option>
-                            <option value="usa">USA</option>
-                          </select>
-                          <label for="subject">Sujet</label>
-                          <textarea id="subject" name="subject" placeholder="On vous écoute.." style="height:170px"></textarea>
-                          <input type="submit" value="Submit">
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-
-        </main>
-        <footer>
-        </footer>
-    </body>
-</html>
+					</section>
+					<!-- Gallerie FIN -->
+					<section>
+						<article>
+							<h1>Bienvenue !</h1>
+						</article>
+						<article>
+							<h2>L'automne est arrivé, nos nouveaux modèles aussi!</h2>
+							<img src="Assets/Images/kimono2.webp" alt="kimono1" class="center">
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci provident laborum porro repellendus quis obcaecati, error debitis alias consequatur? Dolorum saepe dicta error ratione sit deserunt, dolor maiores veritatis modi.
+							</p>
+						</article>
+						<article>
+							<h2>Paris Fashion Week 2021 : Osez défiler en kimono!</h2>
+							<img src="Assets/Images/kimono.png" alt="kimono2" class="center">
+						</article>
+					</section>
+				</main>
+				<footer>
+					<!-- Contact -->
+					<section>
+						<div  img src="Assets/Images/news1.jpg" alt="Logo Boutique yodoya" srcset=""/>
+				  	</div>
+				</section>
+				<div class="container">
+					<div style="text-align:center">
+						<h2>Contactez-nous</h2>
+						<p>
+							Dites-nous ce que vous voulez, on veut tout savoir ! 
+						</p>
+					</div>
+					<div class="row">
+						<div class="column">
+							<img src="Assets/Images/contact.jpg" style="width:100%">
+						</div>
+						<div class="column">
+							<form action="/action_page.php">
+								<label for="fname">Prénom</label>
+								<input type="text" id="fname" name="prénom" placeholder="Votre prénom..">
+								<label for="lname">Nom </label>
+								<input type="text" id="lname" name="nfamille" placeholder="Votre nom de famille..">
+								<label for="pays">Pays</label>
+								<select id="pays" name="pays">
+									<option value="australie">Australie</option>
+									<option value="france">France</option>
+									<option value="usa">USA</option>
+								</select>
+								<label for="subject">Sujet</label>
+								<textarea id="subject" name="subject" placeholder="On vous écoute.." style="height:170px"></textarea>
+								<input type="submit" value="Submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</body>
+	</html>
